@@ -1,0 +1,5 @@
+;;
+;; filladapt
+;;
+
+(require 'filladapt)
