@@ -77,8 +77,9 @@
 (load-init-file "prog/alloy.el")
 (load-init-file "prog/lua.el")
 
+(load-init-file "mail/core.el")
+(load-init-file "mail/message.el")
 (load-init-file "mail/gnus.el")
-(load-init-file "mail/misc.el")
 (load-init-file "mail/bbdb.el")
 (load-init-file "mail/smtp.el")
 
