@@ -117,8 +117,10 @@
 (defun nose-find-test-runner ()
   (message
    (let ((result
-          (reduce '(lambda (x y) (or x y))
-        (mapcar 'nose-find-test-runner-names nose-project-names))))
+          (and nose-project-names
+	       (reduce '(lambda (x y) (or x y))
+		       (mapcar 'nose-find-test-runner-names
+			       nose-project-names)))))
      (if result
          result
        nose-global-name))))
