@@ -21,4 +21,5 @@
 
 
 (add-hook 'python-mode-hook 'rdh::python-mode-hook)
-(setq nose-project-names nil)
+(setq nose-project-names nil
+      nose-use-verbose nil)
