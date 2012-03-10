@@ -15,6 +15,7 @@
 (push info-home				Info-default-directory-list)
 
 (add-to-list 'load-path lisp-home)
+(add-to-list 'load-path (concat init-dir "lisp/"))
 (when (< emacs-major-version 23)
   (add-to-list 'load-path (concat lisp-home "emacs22")))
 
