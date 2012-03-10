@@ -8,7 +8,9 @@
       ido-enable-flex-matching t
       ido-default-buffer-method 'selected-window
       ido-default-file-method 'selected-window
-      ido-auto-merge-work-directories-length -1)
+      ido-auto-merge-work-directories-length -1
+
+      ido-max-directory-size 40000)
 
 (ido-mode t)
 (ido-everywhere 1)
