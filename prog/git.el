@@ -10,6 +10,7 @@
       magit-remote-ref-format 'remote-slash-branch
       magit-completing-read-function #'magit-ido-completing-read
       magit-create-branch-behaviour 'at-point
+      magit-diff-refine-hunk t
 
       magit-diff-hunk-format-options
       '("--patience")
