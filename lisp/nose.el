@@ -52,7 +52,7 @@
 ;;             (local-set-key "\C-cp." 'nosetests-pdb-one)))
 
 (defvar nose-project-names '("eco/bin/test"))
-(defvar nose-project-root-files '("setup.py" ".hg" ".git"))
+(defvar nose-project-root-files '("setup.cfg" "setup.py" ".hg" ".git"))
 (defvar nose-project-root-test 'nose-project-root)
 (defvar nose-global-name "nosetests")
 (defvar nose-use-verbose t)
