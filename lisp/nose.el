@@ -74,8 +74,12 @@
              (format
               (concat "%s "
                       (if nose-use-verbose "-v " "")
-                      "%s -w %s -c %ssetup.cfg %s")
-              (nose-find-test-runner) args where where tnames)))
+                      "%s -w %s %s %s")
+              (nose-find-test-runner)
+	      args
+	      (or where ".")
+	      (if where (concat "-c " where "setup.cfg") "")
+	      tnames)))
   )
 
 (defun nosetests-all (&optional debug failed)
