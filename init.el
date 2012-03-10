@@ -10,7 +10,7 @@
       custom-file	(concat init-dir "custom.el"))
 
 (defun load-init-file (file)
-  (load (concat init-dir file)))
+  (load (concat init-dir "init/" file)))
 
 (push info-home				Info-default-directory-list)
 
